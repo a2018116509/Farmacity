@@ -13,4 +13,8 @@ class Laboratorio extends Model
         'nombre'
     ];
     public $timestamps=false;
+    public function medicamentos()
+    {
+        return $this->hasMany('App\Models\Medicamento');
+    }
 }

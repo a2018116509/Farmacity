@@ -71,4 +71,9 @@ class LaboratorioController extends Controller
     {
         //
     }
+
+    public function selectLaboratorio(){
+        $laboratorio= Laboratorio::select('id','nombre')->get();
+        return $laboratorio;
+    }
 }

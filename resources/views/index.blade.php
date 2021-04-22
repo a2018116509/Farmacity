@@ -18,6 +18,9 @@
                     <li @click="menu=1">
                         <a class="nav-link" href="#">Laboratorios</a>
                     </li>
+                    <li @click="menu=2">
+                        <a class="nav-link" href="#">Medicamentos</a>
+                    </li>
                   </ul>
                 </div>
             </nav>
@@ -27,6 +30,9 @@
             </template>
             <template v-if="menu==1">
                 <frmlaboratorio></frmlaboratorio>
+            </template>
+            <template v-if="menu==2">
+                <frmmedicamento></frmmedicamento>
             </template>
         <!--Fin menu principal-->
         </div>
